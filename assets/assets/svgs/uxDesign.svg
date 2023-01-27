@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <linearGradient id="linear-gradient" y1="0.096" x2="1" y2="1"
+            gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0bbbf3" />
+            <stop offset="1" stop-color="#10f5be" />
+        </linearGradient>
+    </defs>
+    <g id="Group_81" transform="translate(-1091 -1113)">
+        <rect id="Rectangle_11" width="80" height="80" rx="10" transform="translate(1091 1113)"
+            fill="url(#linear-gradient)" />
+        <g id="Group_75" transform="translate(1103 1126)">
+            <path id="Path_47"
+                d="M40.417,0H16.583A4.589,4.589,0,0,0,12,4.583V50.417A4.589,4.589,0,0,0,16.583,55H40.417A4.589,4.589,0,0,0,45,50.417V4.583A4.589,4.589,0,0,0,40.417,0ZM23,1.833H34V2.75a.917.917,0,0,1-.917.917H23.917A.917.917,0,0,1,23,2.75ZM43.167,50.417a2.75,2.75,0,0,1-2.75,2.75H16.583a2.75,2.75,0,0,1-2.75-2.75V4.583a2.75,2.75,0,0,1,2.75-2.75h4.583V2.75a2.75,2.75,0,0,0,2.75,2.75h9.167a2.75,2.75,0,0,0,2.75-2.75V1.833h4.583a2.75,2.75,0,0,1,2.75,2.75Z"
+                transform="translate(0)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+            <path id="Path_48" d="M37,54H23a1,1,0,0,0,0,2H37a1,1,0,0,0,0-2Z"
+                transform="translate(-1.5 -5)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+            <path id="Path_49"
+                d="M38,47a1,1,0,0,1,0,2H32a1,1,0,0,1,0-2h2V39H32a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2H36v8Z"
+                transform="translate(-2.036 -28.042)" fill="#fff" stroke="#fff"
+                stroke-width="0.3" />
+            <path id="Path_50"
+                d="M22,37a1,1,0,0,0-1,1v7a4,4,0,0,0,8,0V38a1,1,0,0,0-2,0v7a2,2,0,0,1-4,0V38A1,1,0,0,0,22,37Z"
+                transform="translate(-0.964 -3.854)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+            <path id="Path_51"
+                d="M25,22a4,4,0,0,0,4-4V11a1,1,0,0,0-2,0v7a2,2,0,0,1-4,0V11a1,1,0,0,0-2,0v7A4,4,0,0,0,25,22Z"
+                transform="translate(-0.964 -1.042)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+            <path id="Path_52"
+                d="M38.515,21.857a1,1,0,0,1-1.372-.342L35,17.944l-2.143,3.571a1,1,0,1,1-1.714-1.03L33.834,16l-2.691-4.485a1,1,0,1,1,1.714-1.03L35,14.056l2.143-3.571a1,1,0,1,1,1.714,1.03L36.166,16l2.691,4.485a1,1,0,0,1-.342,1.372Z"
+                transform="translate(-2.036 23.146)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+            <path id="Path_53"
+                d="M38.868,25.04l-21.231,7a1.025,1.025,0,0,0-.6,1.24.874.874,0,0,0,1.1.68l21.231-7a1.025,1.025,0,0,0,.6-1.24.874.874,0,0,0-1.1-.68Z"
+                transform="translate(0 -2.451)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+        </g>
+    </g>
+</svg>
