@@ -63574,11 +63574,12 @@ p=p.a.a*n
 r=t.E
 return new A.ey(o,A.vw(A.Wd(q,A.f9(A.a([A.XR(s.c,p,p),A.bt(q,10,q),A.f9(A.a([A.cJ(s.a,A.c7(q,q,B.i,q,q,q,q,q,q,q,q,24,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),A.cJ(s.b,A.ew(q,q,A.c7(q,q,B.i,q,q,q,q,q,q,q,q,16,q,q,B.aC,q,q,!0,q,q,q,q,q,q,q,q)),q,q)],r),B.J)],r),B.J),B.aH,!1,q,q,q,q,q,q,q,q,q,q,new A.a0A(this),q,q,q,q,q,q),B.d1,q,q,q),q)},
 pt(a){return this.Ue(a)},
-Ue(a){var s=0,r=A.X(t.z)
+Ue(a){var s=0,r=A.X(t.z),q
 var $async$pt=A.Y(function(b,c){if(b===1)return A.U(c,r)
-while(true)switch(s){case 0:s=2
+while(true)switch(s){case 0:if(a.length===0){s=1
+break}s=3
 return A.R(A.Qv(A.abR("figma.com",a,"https")),$async$pt)
-case 2:return A.V(null,r)}})
+case 3:case 1:return A.V(q,r)}})
 return A.W($async$pt,r)}}
 A.a0A.prototype={
 $0(){var s=this.a
