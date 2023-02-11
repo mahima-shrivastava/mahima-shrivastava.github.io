@@ -63549,7 +63549,7 @@ J(a){var s=null,r=t.E
 return A.kI(s,A.El(A.f9(A.a([A.ait(this.c),A.jR(A.a([new A.EM(s),new A.GF(s)],r),B.J,B.GI,B.aw),A.bt(s,50,s)],r),B.J),0.8),B.di,s,s,s,s,17976931348623157e292)}}
 A.EM.prototype={
 J(a){var s=null,r=a.a0(t.w).f,q=t.E
-return A.bt(A.f9(A.a([A.cJ("Hello \ud83d\udc4b",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,8*$.f5().gfi(),s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),s,s),A.jR(A.a([A.cJ("I'm ",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),s,s),new A.uz("Mahima Shrivastava",A.pb(A.c7(s,s,s,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,B.p,s,s,!0,s,s,s,s,s,s,s,s)),s)],q),B.J,B.b5,B.aw),A.jR(A.a([new A.ey(B.Cl,A.cJ("a ",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),s,s),s),new A.uz("UI/UX Designer",A.pb(A.c7(s,s,s,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,B.p,s,s,!0,s,s,s,s,s,s,s,s)),s)],q),B.J,B.b5,B.aw),A.bt(s,10,s),A.cJ("I'm based in Indore, India with experience in delivering end-to-end Ui/UX Design for software products. I'm passionate about improving the lives of others through design.",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,20,s,s,B.aC,s,1.5,!0,s,s,s,s,s,s,s,s)),s,s)],q),B.dk),s,r.a.a*0.4)}}
+return A.bt(A.f9(A.a([A.cJ("Hello \ud83d\udc4b",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,8*$.f5().gfi(),s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),s,s),A.jR(A.a([A.cJ("I'm ",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),s,s),new A.uz("Mahima Shrivastava",A.pb(A.c7(s,s,s,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,B.p,s,s,!0,s,s,s,s,s,s,s,s)),s)],q),B.J,B.b5,B.aw),A.jR(A.a([new A.ey(B.Cl,A.cJ("a ",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,s,s,s,!0,s,s,s,s,s,s,s,s)),s,s),s),new A.uz("UI/UX Designer",A.pb(A.c7(s,s,s,s,s,s,s,s,s,s,s,10*$.f5().gfi(),s,s,B.p,s,s,!0,s,s,s,s,s,s,s,s)),s)],q),B.J,B.b5,B.aw),A.bt(s,10,s),A.cJ("I'm based in Indore, India with experience in delivering end-to-end UI/UX Design for software products. I'm passionate about improving the lives of others through design.",A.ew(s,s,A.c7(s,s,B.i,s,s,s,s,s,s,s,s,20,s,s,B.aC,s,1.5,!0,s,s,s,s,s,s,s,s)),s,s)],q),B.dk),s,r.a.a*0.4)}}
 A.GF.prototype={
 J(a){var s=a.a0(t.w).f.a.a*0.25
 return A.XR("assets/images/profile_photo.png",s,s)}}
@@ -69077,8 +69077,7 @@ s($,"aCd","aho",()=>new A.F())
 r($,"av1","aos",()=>{var q=new A.Zu()
 q.Pn($.aho())
 return q})
-r($,"aEs","ahI",()=>{var q="NFT Training",p="Pet Training"
-return A.a([A.a0z("NFT",q,"assets/images/projectNFT.png",""),A.a0z("Barko",p,"assets/images/projectBarko.png","/file/J75II3m67a89kGvqbdbl6d/barko-case-study"),A.a0z("Petsie",p,"assets/images/projectPetsie.png",""),A.a0z("Where My Bus",q,"assets/images/projectWMB.png","")],A.a2("v<GI>"))})
+r($,"aEs","ahI",()=>A.a([A.a0z("Cashmama","Teen banking","assets/images/cashmama.png","/file/H3TYsPnbfJecSqGFASoVvL/cashmama"),A.a0z("Barko","Pet Training app","assets/images/projectBarko.png","/file/J75II3m67a89kGvqbdbl6d/barko-case-study"),A.a0z("Bevvy","Beverage App","assets/images/bevvy.png","/proto/5sKvJlJiwmvBJEpr7TtiUI/bevvy-app?page-id=0%3A1&node-id=1%3A2&viewport=366%2C211%2C0.09&scaling=contain"),A.a0z("And much more","","assets/images/projectMore.png","/file/N2B67S1UKj97jGXghKyxT0/UI%2FUX-design")],A.a2("v<GI>")))
 s($,"aE5","apA",()=>A.dy("[&<\\u0001-\\u0008\\u000b\\u000c\\u000e-\\u001f\\u007f-\\u0084\\u0086-\\u009f]|]]>",!0))
 s($,"aDH","apj",()=>A.dy("['&<\\n\\r\\t\\u0001-\\u0008\\u000b\\u000c\\u000e-\\u001f\\u007f-\\u0084\\u0086-\\u009f]",!0))
 s($,"aD9","aoW",()=>A.dy('["&<\\n\\r\\t\\u0001-\\u0008\\u000b\\u000c\\u000e-\\u001f\\u007f-\\u0084\\u0086-\\u009f]',!0))
