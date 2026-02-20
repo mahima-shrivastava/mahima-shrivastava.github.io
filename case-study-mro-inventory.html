@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MRO Inventory Optimization - Case Study">
+    <title>MRO Inventory Optimization - Mahima Shrivastava</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="assets/case-study-mro-hero.png" as="image">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body class="page-work">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.svg" alt="Mahima Shrivastava" class="logo-img">
+                </a>
+                <button class="grid-icon" aria-label="Menu">
+                    <span></span><span></span><span></span><span></span>
+                </button>
+                <a href="index.html#resume" class="chat-btn">
+                    <span class="resume-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </span>
+                    Resume
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-overlay" id="nav-overlay" aria-hidden="true">
+        <button class="nav-overlay-close" id="nav-overlay-close" aria-label="Close menu" type="button">
+            <span class="nav-overlay-close-icon" aria-hidden="true">×</span>
+        </button>
+        <div class="nav-overlay-inner">
+            <a href="index.html" class="nav-overlay-link">Home</a>
+            <a href="work.html" class="nav-overlay-link">Work</a>
+            <a href="about.html" class="nav-overlay-link">About</a>
+            <a href="index.html#resume" class="nav-overlay-link">Resume</a>
+        </div>
+    </nav>
+    <main class="case-study-main">
+        <section class="case-study-mro-hero">
+            <div class="container">
+                <div class="case-study-mro-hero-wrap" id="mro-hero-wrap">
+                    <img src="assets/case-study-mro-hero.png" alt="MRO Inventory Optimization" class="case-study-mro-hero-img" loading="eager" fetchpriority="high" id="mro-hero-img">
+                </div>
+            </div>
+        </section>
+        <section class="case-study-mro-bottom">
+            <div class="container">
+                <div class="case-study-mro-hero-wrap" id="mro-bottom-wrap">
+                    <img src="assets/case-study-mro-bottom.png" alt="MRO Inventory Optimization" class="case-study-mro-hero-img" loading="eager" id="mro-bottom-img">
+                </div>
+            </div>
+        </section>
+    <script>
+        (function() {
+            function whenLoaded(imgId, wrapId) {
+                var img = document.getElementById(imgId);
+                var wrap = document.getElementById(wrapId);
+                if (img && wrap) {
+                    if (img.complete && img.naturalWidth) {
+                        wrap.classList.add('loaded');
+                    } else {
+                        img.onload = function() { wrap.classList.add('loaded'); };
+                    }
+                }
+            }
+            whenLoaded('mro-hero-img', 'mro-hero-wrap');
+            whenLoaded('mro-bottom-img', 'mro-bottom-wrap');
+        })();
+    </script>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-name">Mahima Shrivastava.</div>
+                <nav class="footer-nav">
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html#resume">Resume</a>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/mahima-shrivastava" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73c-.96 0-1.73-.77-1.73-1.73s.77-1.73 1.73-1.73 1.73.77 1.73 1.73-.77 1.73-1.73 1.73zM20 19h-3v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V19h-3V8h2.84v1.46h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:mahima@example.com" class="social-icon" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

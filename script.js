@@ -35,36 +35,52 @@ document.addEventListener('DOMContentLoaded', function() {
     // Header Scroll Effect
     // ============================================
     
-    const header = document.querySelector('.header');
-    let lastScroll = 0;
-    
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-        
-        // Add shadow when scrolling down
-        if (currentScroll > 50) {
-            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
-        } else {
-            header.style.boxShadow = 'none';
-        }
-        
-        lastScroll = currentScroll;
-    });
+    // Header maintains fixed position and background while scrolling
+    // No position or background changes on scroll
     
     // ============================================
-    // Grid Icon Menu Toggle (Mobile)
+    // Grid Icon – open/close navigation overlay
     // ============================================
     
     const gridIcon = document.querySelector('.grid-icon');
+    const navOverlay = document.getElementById('nav-overlay');
     
-    if (gridIcon) {
+    function openNav() {
+        if (!navOverlay) return;
+        navOverlay.classList.add('is-open');
+        navOverlay.setAttribute('aria-hidden', 'false');
+        gridIcon && gridIcon.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeNav() {
+        if (!navOverlay) return;
+        navOverlay.classList.remove('is-open');
+        navOverlay.setAttribute('aria-hidden', 'true');
+        gridIcon && gridIcon.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    if (gridIcon && navOverlay) {
         gridIcon.addEventListener('click', function() {
-            // Toggle active state
-            this.classList.toggle('active');
-            
-            // You can add menu functionality here
-            // For now, it's just a visual toggle
-            console.log('Menu toggled');
+            if (navOverlay.classList.contains('is-open')) {
+                closeNav();
+            } else {
+                openNav();
+            }
+        });
+        
+        navOverlay.addEventListener('click', function(e) {
+            if (e.target === navOverlay) closeNav();
+        });
+        
+        var closeBtn = document.getElementById('nav-overlay-close');
+        if (closeBtn) closeBtn.addEventListener('click', closeNav);
+        
+        navOverlay.querySelectorAll('.nav-overlay-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                closeNav();
+            });
         });
     }
     
@@ -72,21 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Chat Button Interaction
     // ============================================
     
-    const chatBtn = document.querySelector('.chat-btn');
-    
-    if (chatBtn) {
-        chatBtn.addEventListener('click', function() {
-            // You can add modal or redirect functionality here
-            // For now, scroll to contact section
-            const contactSection = document.querySelector('.contact-section');
-            if (contactSection) {
-                contactSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    }
+    // Cup of UX? Let's Chat now links to LinkedIn (see index.html)
     
     // ============================================
     // Intersection Observer for Animations
@@ -143,22 +145,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // All Projects Link Interaction
     // ============================================
     
-    const allProjectsLink = document.querySelector('.all-projects-link');
+    const allProjectsCards = document.querySelectorAll('.all-projects-card');
     
-    if (allProjectsLink) {
-        allProjectsLink.addEventListener('click', function() {
+    allProjectsCards.forEach(function(card) {
+        card.addEventListener('click', function() {
             // You can add navigation to projects page here
             console.log('Navigate to all projects');
             // Example: window.location.href = '/projects';
         });
-        
-        allProjectsLink.setAttribute('tabindex', '0');
-        allProjectsLink.addEventListener('keypress', function(e) {
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.addEventListener('keypress', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
                 this.click();
             }
         });
-    }
+    });
     
     // ============================================
     // PULLED Project Card Interaction

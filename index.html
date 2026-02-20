@@ -5,39 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mahima Shrivastava - UX Designer at IBM. Crafting human-centered AI experiences.">
     <title>Mahima Shrivastava - UX Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
 </head>
 <body>
     <!-- Header Navigation -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">M.</div>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.svg" alt="Mahima Shrivastava" class="logo-img">
+                </a>
                 <button class="grid-icon" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <button class="chat-btn">
-                    <span class="coffee-icon">☕</span>
-                    Cup of UX? Let's Chat
-                </button>
+                <a href="#resume" class="chat-btn">
+                    <span class="resume-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </span>
+                    Resume
+                </a>
             </div>
         </div>
     </header>
+
+    <!-- Navigation overlay (opens on grid icon click) -->
+    <nav class="nav-overlay" id="nav-overlay" aria-hidden="true">
+        <button class="nav-overlay-close" id="nav-overlay-close" aria-label="Close menu" type="button">
+            <span class="nav-overlay-close-icon" aria-hidden="true">×</span>
+        </button>
+        <div class="nav-overlay-inner">
+            <a href="index.html" class="nav-overlay-link">Home</a>
+            <a href="work.html" class="nav-overlay-link">Work</a>
+            <a href="about.html" class="nav-overlay-link">About</a>
+            <a href="#resume" class="nav-overlay-link">Resume</a>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-blob">
-                    <h1 class="hero-greeting">Hello 👋</h1>
+                    <img src="assets/hero-blob.svg" alt="" class="hero-blob-svg" aria-hidden="true">
+                    <div class="hero-text">
+                        <h1 class="hero-greeting">Hello 🌻</h1>
                     <h2 class="hero-name">I'm Mahima Shrivastava</h2>
                     <p class="hero-role">a UX Designer at IBM</p>
                     <p class="hero-description">
-                        I craft human centered AI experiences that align user insight and data-driven research to deliver measurable product outcomes at scale.
-                    </p>
+                            I craft AI experiences that align user insight and data-driven research <br> to deliver product outcomes at scale.
+                    </div>
+                    <dotlottie-wc src="https://lottie.host/70549df5-5b30-4553-930f-df9a5293a1e4/eWK7PpLupX.lottie" class="hero-lottie" autoplay loop></dotlottie-wc>
                 </div>
             </div>
         </div>
@@ -48,32 +72,66 @@
         <div class="container">
             <div class="skills-content">
                 <div class="skill-item">
-                    <span class="skill-icon blue-diamond">◆</span>
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
                     <span>UX Research</span>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon yellow-bolt">⚡</span>
+                    <img src="assets/icon-yellow.svg" alt="" class="skill-icon yellow-bolt" aria-hidden="true">
                     <span>Mobile App Design</span>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon blue-diamond">◆</span>
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
                     <span>Storytelling</span>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon yellow-bolt">⚡</span>
+                    <img src="assets/icon-yellow.svg" alt="" class="skill-icon yellow-bolt" aria-hidden="true">
                     <span>Data-Driven Concept</span>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon blue-diamond">◆</span>
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
                     <span>Product Design</span>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon yellow-bolt">⚡</span>
-                    <span>4.5+ Years of experience</span>
+                    <img src="assets/icon-yellow.svg" alt="" class="skill-icon yellow-bolt" aria-hidden="true">
+                    <span>5+ Years of experience</span>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon blue-diamond">◆</span>
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
                     <span>20+ Projects</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icon-yellow.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
+                    <span>Usability Testing </span>
+                </div>
+               
+                <div class="skill-item">
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
+                    <span>UX Research</span>
+                </div>
+                 
+                <div class="skill-item">
+                    <img src="assets/icon-yellow.svg" alt="" class="skill-icon yellow-bolt" aria-hidden="true">
+                    <span>Mobile App Design</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
+                    <span>Storytelling</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icon-yellow.svg" alt="" class="skill-icon yellow-bolt" aria-hidden="true">
+                    <span>Data-Driven Concept</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
+                    <span>Product Designing</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icon-yellow.svg" alt="" class="skill-icon yellow-bolt" aria-hidden="true">
+                    <span>Design handoff</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icon-blue.svg" alt="" class="skill-icon blue-diamond" aria-hidden="true">
+                    <span>Prototyping</span>
                 </div>
             </div>
         </div>
@@ -86,7 +144,7 @@
                 <div class="impact-text">
                     <h2 class="section-title">Real Impact, Through What I've Built</h2>
                     <p class="section-description">
-                        I'm a UX designer who transforms complex problems into intuitive, scalable solutions. Across multiple projects, my work has delivered 70% higher user adoption, improved engagement, and measurable business impact. By combining research, strategy, and execution, I create experiences that align user needs with business objectives and long-term scalability.
+                     Across multiple projects, my work has delivered 70% higher user adoption, improved engagement, and measurable business impact.br> I create experiences that align user needs with business objectives and long-term scalability.
                     </p>
                     <div class="metrics">
                         <div class="metric-item">
@@ -104,126 +162,131 @@
                     </div>
                 </div>
                 <div class="impact-illustration">
-                    <div class="illustration-placeholder">
-                        <!-- Illustration placeholder - can be replaced with actual image -->
-                        <div class="bar-graph">
-                            <div class="bar bar-1"></div>
-                            <div class="bar bar-2"></div>
-                            <div class="bar bar-3"></div>
-                            <div class="bar bar-4"></div>
-                        </div>
-                    </div>
+                    <img src="assets/impact-illustration.png.png" alt="Impact illustration showing hand placing geometric shape on bar chart" class="impact-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Design Thinking Section -->
-    <section class="design-thinking-section">
-        <div class="container">
-            <h2 class="section-title">Solutions Built Through Design Thinking</h2>
-            <p class="section-description">
-                Every pixel is crafted with intent, and every journey is designed with empathy, creating intuitive user experiences that turn complexity into meaningful impact.
-            </p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
+    <!-- Design Thinking & Projects Section -->
     <section class="projects-section">
         <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title">Crafting AI Products That Empower Enterprise
+                </h2>
+                <p class="section-description">
+                    Every pixel is crafted with intent, and every journey is designed with empathy 
+                </p>
+            </div>
             <div class="projects-layout">
-                <!-- Main IBM Projects Card -->
-                <div class="main-project-card">
-                    <h2 class="section-title">Crafting AI Products That Empower Enterprise</h2>
-                    <p class="section-description">
-                        I turn AI into meaningful experiences for enterprises and their people. Over Two years at IBM, I have worked on AI-driven products, automation, data visualization, and user-focused design, simplifying complex workflows.
-                    </p>
-                    <div class="case-studies">
-                        <div class="case-study-card">
+                <div class="case-studies">
+                        <a href="case-study-ibm-network-intelligence.html" class="case-study-card" aria-label="View IBM Network Intelligence case study">
                             <div class="case-study-image">
                                 <div class="image-placeholder ibm-network">
-                                    <span class="logo-text">IBM</span>
+                                    <img src="assets/ibm-network-intelligence.png.png" alt="IBM Network Intelligence - Accelerate your shift to autonomy with agentic AI" class="case-study-placeholder-img">
                                 </div>
                             </div>
-                            <div class="case-study-content">
-                                <span class="case-study-label">Case Study | @IBM</span>
-                                <h3 class="case-study-title">Network Intelligence</h3>
-                                <p class="case-study-tag">AI for Networking</p>
+                            <div class="case-study-text-row">
+                                <div class="case-study-content">
+                                    <span class="case-study-label">Case Study | @IBM</span>
+                                    <h3 class="case-study-title">Network Intelligence</h3>
+                                    <p class="case-study-tag">AI for Networking</p>
+                                </div>
+                                <div class="case-study-arrow"><div class="arrow-circle">→</div></div>
                             </div>
-                            <div class="case-study-arrow">→</div>
-                        </div>
-                        <div class="case-study-card">
+                        </a>
+                        <a href="case-study-ibm-watsonx-code-assistant.html" class="case-study-card" aria-label="View IBM Watsonx Code Assistant case study">
                             <div class="case-study-image">
                                 <div class="image-placeholder ibm-watsonx">
-                                    <span class="logo-text">IBM watsonx</span>
+                                    <img src="assets/ibm-watsonx-code.assistant.jpg" alt="IBM watsonx Code Assistant - Gen AI Coding Assistance" class="case-study-placeholder-img">
                                 </div>
                             </div>
-                            <div class="case-study-content">
-                                <span class="case-study-label">Case Study | @IBM</span>
-                                <h3 class="case-study-title">Watsonx Code Assistance</h3>
-                                <p class="case-study-tag">Gen AI Coding Assistance</p>
+                            <div class="case-study-text-row">
+                                <div class="case-study-content">
+                                    <span class="case-study-label">Case Study | @IBM</span>
+                                    <h3 class="case-study-title">Watsonx Code Assistance</h3>
+                                    <p class="case-study-tag">Gen AI Coding Assistance</p>
+                                </div>
+                                <div class="case-study-arrow"><div class="arrow-circle">→</div></div>
                             </div>
-                            <div class="case-study-arrow">→</div>
-                        </div>
-                        <div class="case-study-card">
+                        </a>
+                        <a href="case-study-mro-inventory.html" class="case-study-card" aria-label="View MRO Inventory Optimization case study">
                             <div class="case-study-image">
                                 <div class="image-placeholder ibm-mro">
-                                    <span class="logo-text">IBM</span>
+                                    <img src="assets/ibm-mro-io.png" alt="IBM MRO Inventory Optimization - Enterprise Asset Management" class="case-study-placeholder-img">
                                 </div>
                             </div>
-                            <div class="case-study-content">
-                                <span class="case-study-label">Case Study | @IBM</span>
-                                <h3 class="case-study-title">MRO Inventory Optimization</h3>
-                                <p class="case-study-tag">Enterprise Asset Management</p>
+                            <div class="case-study-text-row">
+                                <div class="case-study-content">
+                                    <span class="case-study-label">Case Study | @IBM</span>
+                                    <h3 class="case-study-title">MRO Inventory Optimization</h3>
+                                    <p class="case-study-tag">Enterprise Asset Management</p>
+                                </div>
+                                <div class="case-study-arrow"><div class="arrow-circle">→</div></div>
                             </div>
-                            <div class="case-study-arrow">→</div>
+                        </a>
+                    </div>
+
+                <!-- Right column: PULLED + Checkout all projects -->
+                <div class="projects-right">
+                    <a href="case-study-pulled.html" class="pulled-project-card" aria-label="View Pulled case study">
+                        <div class="pulled-body">
+                            <div class="pulled-placeholder">
+                                <img src="assets/pulled.png" alt="PULLED - World of Gaming, Challenge, Play & Share" class="pulled-placeholder-img">
+                            </div>
+                            <div class="pulled-text-col">
+                                <div class="pulled-header">
+                                    <h2 class="section-title">Pulled</h2>
+                                </div>
+                                <p class="section-description">World of Gaming, Challenge, Play & Share...</p>
+                                <div class="pulled-arrow-wrap">
+                                    <div class="arrow-circle">→</div>
+                                </div>
+                            </div>
                         </div>
+                        </a>
+                    <div class="all-projects-row">
+                        <a href="work.html" class="all-projects-card pulled-project-card" aria-label="View all projects">
+                            <div class="pulled-body">
+                                <div class="pulled-placeholder">
+                                    <img src="assets/all project.png" alt="My files - all projects" class="pulled-placeholder-img">
+                                </div>
+                                <div class="pulled-text-col">
+                                    <div class="pulled-header">
+                                        <h2 class="section-title">Checkout my all projects!!</h2>
+                                    </div>
+                                    <p class="section-description">View all case studies and projects.</p>
+                                    <div class="pulled-arrow-wrap">
+                                        <div class="arrow-circle">→</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <!-- PULLED Project Card -->
-                <div class="pulled-project-card">
-                    <div class="pulled-header">
-                        <h2 class="section-title">PULLED</h2>
-                        <div class="arrow-circle">→</div>
-                    </div>
-                    <p class="section-description">World of Gaming, Challenge, Play & Share...</p>
-                    <div class="pulled-images">
-                        <div class="pulled-image img-1"></div>
-                        <div class="pulled-image img-2"></div>
-                        <div class="pulled-image img-3"></div>
-                        <div class="pulled-image img-4"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- All Projects Link -->
-            <div class="all-projects-link">
-                <span class="skill-icon blue-diamond">◆</span>
-                <span>Checkout my all projects!!</span>
-                <div class="arrow-circle">→</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h2 class="section-title">From concept to creation, let's make it happen!</h2>
-                    <p class="section-description">
-                        Have a project in mind let's collaborate over coffee and design solutions that delight and inspire
-                    </p>
-                    <a href="https://linkedin.com/in/mahima-shrivastava" class="contact-btn" target="_blank" rel="noopener noreferrer">
-                        Let's Connect on LinkedIn →
-                    </a>
-                </div>
-                <div class="contact-illustration">
-                    <div class="speech-bubbles">
-                        <div class="bubble bubble-large"></div>
-                        <div class="bubble bubble-small"></div>
+            <div class="contact-blob">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <div class="contact-heading-group">
+                            <h2 class="section-title">From concept to creation, let's make it happen!</h2>
+                            <p class="section-description">
+                                Have a project in mind let's collaborate over coffee and design solutions that delight and inspire
+                            </p>
+                        </div>
+                        <a href="https://www.linkedin.com/in/mahima-shrivastava" class="contact-btn" target="_blank" rel="noopener noreferrer">
+                            Let's Connect on LinkedIn →
+                        </a>
                     </div>
+                <div class="contact-illustration">
+                    <dotlottie-wc src="https://lottie.host/8c5c67eb-3d19-44ff-9a11-0bae1dfd8d57/YlnM7UhB9u.lottie" class="contact-lottie" autoplay loop></dotlottie-wc>
+                </div>
                 </div>
             </div>
         </div>
@@ -235,12 +298,12 @@
             <div class="footer-content">
                 <div class="footer-name">Mahima Shrivastava.</div>
                 <nav class="footer-nav">
-                    <a href="#work">Work</a>
-                    <a href="#about">About</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
                     <a href="#resume">Resume</a>
                 </nav>
                 <div class="footer-social">
-                    <a href="https://linkedin.com/in/mahima-shrivastava" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/mahima-shrivastava" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73c-.96 0-1.73-.77-1.73-1.73s.77-1.73 1.73-1.73 1.73.77 1.73 1.73-.77 1.73-1.73 1.73zM20 19h-3v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V19h-3V8h2.84v1.46h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19z" fill="currentColor"/>
                         </svg>
