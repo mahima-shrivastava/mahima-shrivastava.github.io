@@ -1500,8 +1500,8 @@ img,
         justify-content: center;
     }
     .contact-lottie {
-        width: min(320px, 80%);
-        height: min(320px, 80%);
+        width: 280px;
+        height: 280px;
         margin-left: 0;
     }
     .nav-overlay-link {
@@ -1704,10 +1704,9 @@ img,
         min-height: 12rem;
     }
     .contact-lottie {
-        width: 100%;
-        max-width: 18rem;
-        height: auto;
-        aspect-ratio: 1;
+        width: 260px;
+        height: 260px;
+        max-width: 260px;
         margin: 0 auto;
     }
     .footer-content {
