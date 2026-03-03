@@ -1,6 +1,6 @@
 # Deploy Your Portfolio
 
-Your repo: **https://github.com/mahima-shrivastava/portfolio**
+Your repo: **https://github.com/mahima-shrivastava/mahima-shrivastava.github.io**
 
 ---
 
@@ -22,7 +22,7 @@ git push origin main
 
 ### 2. Turn on GitHub Pages
 
-1. Open: **https://github.com/mahima-shrivastava/portfolio**
+1. Open: **https://github.com/mahima-shrivastava/mahima-shrivastava.github.io**
 2. Click **Settings** → **Pages** (left sidebar).
 3. Under **Build and deployment**:
    - **Source:** Deploy from a branch
@@ -31,9 +31,9 @@ git push origin main
 
 ### 3. Your live site
 
-After 1–2 minutes your site will be at:
+Because the repo is named `mahima-shrivastava.github.io`, your site is served at the root:
 
-**https://mahima-shrivastava.github.io/portfolio/**
+**https://mahima-shrivastava.github.io/**
 
 Use `index.html` as the homepage (GitHub Pages serves it by default).
 
@@ -43,7 +43,7 @@ Use `index.html` as the homepage (GitHub Pages serves it by default).
 
 1. Go to **[netlify.com](https://www.netlify.com)** and sign in.
 2. **Add new site** → **Import an existing project** → **GitHub**.
-3. Choose **mahima-shrivastava/portfolio**.
+3. Choose **mahima-shrivastava/mahima-shrivastava.github.io**.
 4. **Build settings:** leave blank (static site).
    - Publish directory: `/` or leave default.
 5. **Deploy**. You’ll get a URL like `https://random-name.netlify.app`.
